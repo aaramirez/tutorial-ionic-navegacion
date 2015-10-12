@@ -32,6 +32,14 @@ angular.module('starter', ['ionic'])
           templateUrl: 'templates/home.html'
         }
       }
+    })
+    .state('tabs.more', {
+      url: '/more',
+      views: {
+        'home-tab': {
+          templateUrl: 'templates/more.html'
+        }
+      }
     });
 
   $urlRouterProvider.otherwise("/tab/home");
