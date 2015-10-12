@@ -17,3 +17,14 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.config(function($stateProvider, $urlRouterProvider) {
+  $stateProvider
+    .state('tabs', {
+      url: '/tabs',
+      abstract: false,
+      templateUrl: 'templates/tabs.html' 
+    });
+
+  $urlRouterProvider.otherwise("/tabs");
+})
