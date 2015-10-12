@@ -22,9 +22,9 @@ angular.module('starter', ['ionic'])
   $stateProvider
     .state('tabs', {
       url: '/tabs',
-      abstract: false,
+      abstract: true,
       templateUrl: 'templates/tabs.html' 
     });
 
-  $urlRouterProvider.otherwise("/tabs");
+  $urlRouterProvider.otherwise("/tab/home");
 })
