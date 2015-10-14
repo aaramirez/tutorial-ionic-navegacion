@@ -48,6 +48,30 @@ angular.module('starter', ['ionic'])
           templateUrl: 'templates/andmore.html'
         }
       }
+    })
+    .state('tabs.about', {
+      url: '/about', 
+      views: {
+        'about-tab': {
+          templateUrl: 'templates/about.html'
+        }
+      }
+    })
+    .state('tabs.moreabout', {
+      url: '/moreabout',
+      views: {
+        'about-tab': {
+          templateUrl: 'templates/moreabout.html'
+        }
+      }
+    })
+    .state('tabs.contact', {
+      url: '/contact',
+      views: {
+        'contact-tab': {
+          templateUrl: 'templates/contact.html'
+        }
+      }
     });
 
   $urlRouterProvider.otherwise("/tab/home");
