@@ -40,6 +40,14 @@ angular.module('starter', ['ionic'])
           templateUrl: 'templates/more.html'
         }
       }
+    })
+    .state('tabs.andmore', {
+      url: '/andmore',
+      views: {
+        'home-tab': {
+          templateUrl: 'templates/andmore.html'
+        }
+      }
     });
 
   $urlRouterProvider.otherwise("/tab/home");
